@@ -1,0 +1,57 @@
+html {
+  display: flex;
+}
+body {
+  padding: 20px 10px;
+  margin: auto;
+  max-width: 900px;
+}
+
+div.badges {
+  text-align: center;
+  user-select: none;
+  margin-bottom: 15px;
+}
+
+img.aws-badge {
+  width: 150px;
+}
+
+h1.title {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(238, 238, 238);
+  width: 300px;
+  color: inherit;
+  text-decoration: inherit;
+  user-select: none;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.project-card p {
+  margin: 20px;
+}
+
+.project-card h1 {
+  text-align: center;
+}
+
+ul.misc-projects {
+  margin: auto;
+  max-width: 625px;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}

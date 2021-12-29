@@ -38,6 +38,7 @@ h1.title {
   text-decoration: inherit;
   user-select: none;
   box-shadow: 5px 5px 5px grey;
+  cursor: pointer;
 }
 
 .project-card p {
@@ -54,4 +55,9 @@ ul.misc-projects {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
 }

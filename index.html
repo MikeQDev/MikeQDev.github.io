@@ -55,30 +55,36 @@
   </h1>
   <p style="text-align: center; margin: 0;">(click to view)</p>
   <div class="projects">
-    <a href="https://homepaqe.com" class="project-card" target="_blank" rel="noreferrer">
+    <div onclick="window.open('https://homepaqe.com','_blank')" class="project-card">
       <div>
         <h1>homepaqe</h1>
         <p>Web-based bookmark organizer. Save, discover, and organize bookmarks across devices, friends, and family</p>
       </div>
-    </a><a href="https://github.com/MikeQDev/angular-landing-page-template/" class="project-card" target="_blank"
-      rel="noreferrer">
+    </div>
+    <!-- add timeout here so a href takes priority, since >1 opens get blocked by popup blocker-->
+    <div onclick="setTimeout(()=>window.open('https://github.com/MikeQDev/angular-landing-page-template/','_blank'),0)"
+      class="project-card">
       <div>
         <h1>Angular Landing Page Template</h1>
         <p>Easily generate mobile-first landing pages with this Angular project. Super efficient for
-          painted-door testing products!</p>
+          painted-door testing products! <a href="https://mikeqdev.github.io/angular-landing-page-template/"
+            target="_blank" rel="noreferrer">Live
+            demo</a></p>
       </div>
-    </a><a href="https://MikeQDev.github.io/resume/" class="project-card" target="_blank" rel="noreferrer">
+    </div>
+    <div onclick="window.open('https://MikeQDev.github.io/resume/','_blank')" class="project-card">
       <div>
         <h1>HTML Resume</h1>
         <p>Who uses PDFs nowadays?! Portable resume in HTML format</p>
       </div>
-    </a><a href="https://github.com/MikeQDev/ammobuy.sh" class="project-card" target="_blank" rel="noreferrer">
+    </div>
+    <div onclick="window.open('https://github.com/MikeQDev/ammobuy.sh','_blank')" class="project-card">
       <div>
         <h1>ammoBuy.sh</h1>
         <p>Simple bash script (on a cron schedule) notifies a user when ammo is in
           stock at certain stores (used during the 2020 shortage)</p>
       </div>
-    </a>
+    </div>
   </div>
 
   <p style="text-align: center;">

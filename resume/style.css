@@ -36,17 +36,14 @@ body {
 
 #main-split {
   display: flex;
-  height: 100%;
 }
 
 #main {
-  height: 100%;
   padding-right: 10px;
   width: 77%;
 }
 
 #sidebar {
-  height: 100%;
   width: 23%;
 }
 #introduction {

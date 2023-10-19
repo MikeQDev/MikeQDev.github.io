@@ -1,253 +1,161 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YOURNAMEHERE's Resume</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="../favicon.ico?v=1" />
+    <style>
+        p.section-header {
+            border-bottom: 2px black solid;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 0 0 10px;
+        }
+
+        div.three-column {
+            display: flex;
+        }
+
+        div.three-column p {
+            display: inline;
+            font-weight: bold;
+            margin: 0px;
+        }
+
+        div.three-column :nth-child(1) {
+            width: 42%;
+            text-align: left;
+        }
+
+        div.three-column :nth-child(2) {
+            width: 16%;
+            text-align: center;
+        }
+
+        div.three-column :nth-child(3) {
+            width: 42%;
+            text-align: right
+        }
+
+        ul {
+            padding: 0 0 0 15px;
+            margin: 1px;
+        }
+
+        li {
+            margin: 10px 0px;
+            font-size: .9em;
+        }
+
+        body {
+            max-width: 800px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        * {
+            font-family: Calibri, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="container">
-        <div id="header">
-            <span class="name">
-                YOURNAMEHERE
-            </span>
-            <span class="contact-info">
-                <p>YOURGMAIL@gmail.com
-                </p>
-                <p>MikeQDev.github.io</p>
-                <p>5555555555</p>
-            </span>
-        </div>
-        <div id="main-split">
-            <div id="main">
-                <div id="introduction">
-                    <div class="education">
-                        <h1>Education</h1>
-                        <p>Eastern Connecticut State University<br />
-                            Bachelor of Science in Computer Science<br />
-                            <span style="margin-left:10px">Minor in Business Information Systems</span><br />
-                            Cumulative GPA: <b>4.0</b>
-                        </p>
-                    </div>
-                    <div class="summary">
-                        <h1>Summary</h1>
-                        <p>AWS-certified, full-stack engineer (+ SRE) leveraging best practices and test-driven
-                            development
-                            (TDD) to build resilient, modular solutions. Agilely delivering value
-                            with cloud-ready applications
-                        </p>
-                    </div>
-                </div>
-                <div class="position">
-                    <p class="position-title">
-                        Software Engineer : Engineering Enablement (COMPANYNAME)
-                        <span class="date">
-                            May 2021 - Present
-                        </span>
-                    </p>
-                    <ul class="responsibilities">
-                        <li>Designed and built highly-reliable systems using AWS Well-Architected principles</li>
-                        <li>Awarded security coin for demoing and pushing the 'certification' of non-PII logs</li>
-                        <li>Sped up development velocity by building reusable Terraform modules for common patterns</li>
-                        <li>Mentored and delegated project work to junior developers through test-driven development
-                        </li>
-                        <li>Collaborated across teams to orchestrate handoffs and identify issues early</li>
-                        <li>Enforced best practices through high-quality code reviews and challenged existing practices
-                        </li>
-                        <li>Exceeded end-users expectations through requirement elicitation and proper project planning
-                        </li>
-                        <li>Enabled rapid root-cause-analysis and observability by extending Winston logger to support
-                            OpenTelemetry structured
-                            logging specification</li>
-                        <li>Built and documented OpenTelemetry PoC demonstrating flow of signals from app to backend</li>
-                        <li>SRE evangelism - understood and shared practices for SLIs + SLOs, monitoring + alerting,
-                            postmortems, reliability,
-                            scalability, etc.</li>
-                        <li>Pushed back on enterprise-prescribed Terraform Enterprise practices; making development and deployment much easier for engineers</li>
-                    </ul>
-                </div>
-                <div class="position">
-                    <p class="position-title">
-                        Advanced Software Engineer (COMPANYNAME)
-                        <span class="date">
-                            December 2019 - May 2021
-                        </span>
-                    </p>
-                    <ul class="responsibilities">
-                        <li>Enabled I18N by building translation utility to generate string resources + integrated in
-                            pipeline</li>
-                        <li>Sped up Jenkins pipelines with parallelization and resolved existing race conditions</li>
-                        <li>Identified and reduced AWS overspendings by ~530% in S3 and ~65% in EBS</li>
-                        <li>Enforced clean cloud environment with proper lifecycle polices and clean-up scripts</li>
-                        <li>Saved teams hours of product certification (smoke-testing) by creating artifact assistant
-                            script</li>
-                        <li>Eliminated service account lockouts and toil by writing an AWS credential rotation
-                            script</li>
-                        <li>Proposed cost-savings for Jenkins instance through metrics and redesign</li>
-                        <li>Implemented customer-requested features (new functionality + Server-Timing header)</li>
-                        <li>Protected customer sessions with HTTPS headers (HSTS/XSS/CSP)</li>
-                        <li>Modernized legacy GWT app with Angular (w/ css + proper test cases) with team</li>
-                        <li>Made development easier for developers by creating pre-commit scripts and helper tools</li>
-                    </ul>
-                </div>
-                <div class="position">
-                    <p class="position-title">
-                        Software Engineer : Data and Analytics (COMPANYNAME)
-                        <span class="date">
-                            July 2017 - November 2019
-                        </span>
-                    </p>
-                    <ul class="responsibilities">
-                        <li>Protected inactive customer data by contributing to big data purge project</li>
-                        <li>Fed data purge project by writing tool to discover undefined relationships in multiple
-                            RDBMS
-                        </li>
-                        <li>Enabled real-time data streaming across systems with KafkaConnect</li>
-                        <li>Led junior developers and defined 'seed project' for Angular applications</li>
-                        <li>Created robust build and deployment processes through CI/CD best practices</li>
-                        <li>Improved application performance and error monitoring with logging best practices and Splunk
-                        </li>
-                        <li>Involved non-technical Data Analysts in team workflow by creating Git helper script</li>
-                        <li>Removed overhead for new developers by creating pre-configured development env scripts</li>
-                        <li>Fueled Python machine learning (ML) projects by massaging data with pandas</li>
-                        <li>Designed, built, and productionized self-serviced enterprise job scheduler/execution app
-                        </li>
-                        <li>Decomissioned expensive system by building an extraction process</li>
-                    </ul>
-                </div>
-                <div class="position">
-                    <p class="position-title">
-                        Team Lead + Developer : DevOps (COMPANYNAME)
-                        <span class="date">
-                            July 2017 - November 2019
-                        </span>
-                    </p>
-                    <ul class="responsibilities">
-                        <li>Supported multiple developer teams deployments with CI/CD pipelines</li>
-                        <li>Shared/designed build and deployment patterns with team members</li>
-                        <li>Ran stand-up meetings to address concerns and solutions dev teams had</li>
-                        <li>Orchestrated modular applications with NGINX and Postgres</li>
-                        <li>Ensured uptime with healthchecks, quick troubleshooting of TLS certificates and
-                            auth errors</li>
-                        <li>Led migration effort to containerize multi-facet applications in Openshift</li>
-                    </ul>
-                </div>
-                <div class="position">
-                    <p class="position-title">
-                        Developer & Tech Lead Intern : Data and Analytics (COMPANYNAME)
-                        <span class="date">
-                            June 2016 - May 2017
-                        </span>
-                    </p>
-                    <ul class="responsibilities">
-                        <li>Saved $ and storage by applying automation and big data techniques to define file types
-                            across the
-                            enterprise</li>
-                        <li>Fueled dashboard with 5 billion 'server crawl' records (across 25pB of file data) through
-                            ETL (Extract, Transform,
-                            Load) into Hadoop</li>
-                        <li>Applied CI/CD best practices to ensure proper deployment and workflows</li>
-                    </ul>
-                </div>
-                <div class="position">
-                    <p class="position-title">
-                        Developer Intern : Enterprise Architecture (COMPANYNAME)
-                        <span class="date">
-                            Summer 2015
-                        </span>
-                    </p>
-                    <ul class="responsibilities">
-                        <li>Supported COMPANYNAME's 'Service Oriented Architecture' refresh strategy; built POC API
-                        </li>
-                        <i style="margin-left:10px">Transform and deliver plan data to comply with
-                            downstream consumers
-                            requested format</i>
-                        <li>Designed technology solutions for 30-intern team project</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="sidebar">
-                <div class="sidebar-block">
-                    <h1>Skills</h1>
-                    <h2>Programming</h2>
-                    <ul class="skills">
-                        <li>Javascript (Node, Angular)</li>
-                        <li>HTML, CSS</li>
-                        <li>Python</li>
-                        <li>Shell Scripting (Linux)</li>
-                        <li>Java</li>
-                        <li>Test-Driven Development</li>
-                    </ul>
-                    <h2>DevOps: CI/CD</h2>
-                    <ul class="skills">
-                        <li>Terraform</li>
-                        <li>Git / gitflow</li>
-                        <li>Jenkins</li>
-                        <li>Docker</li>
-                        <li>Kubernetes / K8s (learning)</li>
-                        <li>Artifactory / Nexus</li>
-                        <li>Ansible</li>
-                    </ul>
-                    <h2>Data</h2>
-                    <ul class="skills">
-                        <li>OpenTelemetry + APM</li>
-                        <li>REST API</li>
-                        <li>Postgres &amp; PostgREST</li>
-                        <li>Analytics</li>
-                        <li>Hadoop</li>
-                        <li>SQL/NoSQL (MongoDB)</li>
-                        <li>Kafka/JMS</li>
-                        <li>rsync/NAS</li>
-                    </ul>
-                    <h2>Misc</h2>
-                    <ul class="skills">
-                        <li>Site Reliability Engineering</li>
-                        <li>Microservices</li>
-                        <li>Event-driven architecture</li>
-                        <li>AWS</li>
-                        <li>Linux</li>
-                        <li>Nginx</li>
-                        <li>Unit &amp; stress testing</li>
-                        <li>Production deployment</li>
-                        <li>Job scheduling</li>
-                    </ul>
-                    <h1>Projects</h1>
-                    <h2>Personal</h2>
-                    <ul class="skills">
-                        <li>Homepage Link Organizer</li>
-                        <li>Bookmark Queue</li>
-                        <li>This resume! (HTML/CSS)</li>
-                        <li>Static Landing Page Builder</li>
-                        <li>Big Y Coupon Adder</li>
-                        <li>Song Instrumental Extractor</li>
-                        <li>Website Scraper with Notifier</li>
-                        <li>HTML Soundboard</li>
-                        <li>Twitter Auto-Tweeter</li>
-                        <li>Apprenticeship Platform</li>
-                        <li>Home Surveillance Sys</li>
-                        <li>IRC Snapchat</li>
-                        <li>CT Judicial Analysis</li>
-                        <li>Video Streaming Web</li>
-                        <li>Road Traffic Monitor</li>
-                        <li>Imageboard Downloader</li>
-                        <li>Bulk SMTP Sender</li>
-                        <li>Game Bots &amp; Client Mods</li>
-                    </ul>
-                    <h2>Work</h2>
-                    <ul class="skills">
-                        <li>GitHub Data Collector</li>
-                        <li>OTel Structured Logger</li>
-                        <li>SLO Terraform Module</li>
-                        <li>Tech Portfolio Syncer</li>
-                        <li>Enterprise Scheduling</li>
-                        <li>DB Relationship Discovery</li>
-                        <li>Translation Utility (I18N)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <div class="three-column">
+        <p style="width:33.33%"></p>
+        <p style="width:33.33%; font-size:1.5em">YOURNAMEHERE</p>
+        <p style="width:33.33%; font-size:.8em">YOURGMAIL@gmail.com<br />MikeQDev.github.io<br />www.SreZone.com</p>
     </div>
+
+    <p class="section-header" style="margin: -10px 0 0;">Experience</p>
+    <div class="three-column">
+        <p style="width: 33.33%">Software Engineer II</p>
+        <p style="width: 33.33%">COMPANYNAME</p>
+        <p style="width: 33.33%">May 2021&mdash;Present</p>
+    </div>
+    <ul>
+        <li>Evangelized SRE and OpenTelemetry across the company through demos, reproducible PoCs, and documentation to
+            promote operational excellence</li>
+        <li>Promoted structured logging by creating NodeJS Winston logger wrapper to enable rapid troubleshooting and analytics (also included sensitive data redaction and safe error
+            logging)</li>
+        <li>Partnered with IaC org to create and improve the company's Terraform modules for compliance and faster
+            development</li>
+        <li>Pushed back on prescribed Terraform Cloud/Enterprise practices by proving VCS approach inadequate for app
+            builds
+            and instead promoting CLI/API, preventing technical debt for many teams</li>
+        <li>Built better engineers by mentoring and delegating meaningful tasks to junior engineers</li>
+    </ul>
+    <div class="three-column">
+        <p>Advanced Software Engineer</p>
+        <p>COMPANYNAME</p>
+        <p>December 2019&mdash;May 2021</p>
+    </div>
+    <ul>
+        <li>Replaced vendor solution with custom built I18N app that generated string translations for release artifacts
+            during CICD pipeline</li>
+        <li>Identified and reduced AWS S3 and EBS spendings by 530% and 65%, respectively, through the AWS CLI and by
+            applying lifecycle policies</li>
+        <li>Eliminated hours of toil and human error by writing artifact downloader script and AWS cred rotation script
+    </ul>
+    <div class="three-column">
+        <p>Software Engineer</p>
+        <p>COMPANYNAME</p>
+        <p>July 2017&mdash;November 2019</p>
+    </div>
+    <ul>
+        <li>Designed and built self-serviced enterprise job runner that pulled dynamic arguments from API to streamline
+            change ticket process</li>
+        <li>Jump-started developer productivity by creating scripts that installed fresh developer environments
+            accessible
+            over x11vnc</li>
+        <li>Built "relationship discovery" tool to discover undocumented database fields for customer data purge project
+        </li>
+        <li>Decommissioned acquired software product by syncing data to NAS with rsync</li>
+    </ul>
+    <div class="three-column">
+        <p>Engineering Intern</p>
+        <p>COMPANYNAME</p>
+        <p>June 2016&mdash;May 2017</p>
+    </div>
+    <ul>
+        <li>Solved data governance problem of 25pB unknown disk usage across the company's private cloud servers by
+            using big data technique</li>
+        <li>Wrote ETL script to move 5 billion 'server crawl' records from CSV files into Hadoop to fuel data governance dashboard
+        </li>
+    </ul>
+    <div class="three-column">
+        <p>Enterprise Architecture Intern</p>
+        <p>COMPANYNAME</p>
+        <p>June 2015&mdash;August 2015</p>
+    </div>
+    <ul>
+        <li>Created REST API in Java to CRUD MongoDB and shared practices with other interns</li>
+        <li>Designed and collaborated with peers on technical solution for interns Summer project</li>
+    </ul>
+
+    <p class="section-header">Technologies and Languages</p>
+    <ul>
+        <li>Languages: Node.js , Bash , Python</li>
+        <li>Technologies: Terraform , OpenTelemetry , Linux , Git , AWS , Jenkins , GitHub Actions , Docker , K8s
+            (Kubernetes) , NGINX , Ansible , SQL , NoSQL</li>
+    </ul>
+    <p class="section-header">Education and Certifications</p>
+
+    <ul>
+        <li><b>B.S. Computer Science</b>, Minor in Business Information Systems, Eastern Connecticut State University,
+            GPA: 3.96</li>
+        <li><b>AWS Solutions Architect Associate</b>, June 2020 &mdash; June 2023</li>
+    </ul>
+
+    <p class="section-header">Projects</p>
+    <ul>
+        <li>Work: GitHub data collector, SLO Terraform module (wrapper), Winston wrapper for OTel structured logging, tech portfolio
+            syncer, ETL feeding mainframe change dashboard, enterprise job runner, DB relationship discovery,
+            translation utility (I18N)</li>
+        <li>Personal: SreZone.com, homepage link organizer, bookmark queue, affirmations push notifier, this resume (HTML), Big Y
+            coupon adder, song instrumental extractor, website scraper with notifier, HTML soundboard, Twitter
+            auto-tweeter, home surveillance system, IRC Snapchat, CT judicial analysis</li>
+    </ul>
 </body>
 
 </html>

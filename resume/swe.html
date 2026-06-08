@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOURNAMEHERE's Resume</title>
+    <style>
+      * {
+        font-variant-ligatures: none;
+        -webkit-font-feature-settings: "liga" 0, "clig" 0;
+        font-feature-settings: "liga" 0, "clig" 0;
+      }
+      p {
+        margin: 5px 0;
+        font-size: 0.9em;
+      }
+      p.section-header {
+        border-bottom: 2px black solid;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+
+      div.three-column {
+        display: flex;
+      }
+
+      div.three-column p {
+        display: inline;
+        font-weight: bold;
+        margin: 0px;
+      }
+
+      div.three-column :nth-child(1) {
+        width: 42%;
+        text-align: left;
+      }
+
+      div.three-column :nth-child(2) {
+        width: 16%;
+        text-align: center;
+      }
+
+      div.three-column :nth-child(3) {
+        width: 42%;
+        font-weight: normal;
+        text-align: right;
+      }
+
+      ul {
+        padding: 0 0 0 15px;
+        margin: 1px;
+      }
+
+      li {
+        margin: 4px 0px;
+        font-size: 0.9em;
+      }
+
+      body {
+        max-width: 800px;
+        margin: auto;
+        padding: 10px;
+      }
+
+      * {
+        font-family: Calibri, sans-serif;
+      }
+
+      div.highlights li {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="three-column">
+      <p style="width: 33.33%"></p>
+      <p style="width: 33.33%; font-size: 1.5em; line-height: 200%">
+        YOURNAMEHERE
+      </p>
+      <p style="width: 33.33%; font-size: 0.8em">
+        YOURGMAIL@gmail.com<br /><a href="https://github.com/MikeQDev">GitHub.com/MikeQDev</a><br /><a
+          href="https://www.linkedin.com/in/YOURLINKEDIN/"
+          >LinkedIn.com/in/YOURLINKEDIN</a
+        >
+      </p>
+    </div>
+    <p class="section-header" style="margin: -20px 0 0">SUMMARY</p>
+    <p>
+      <b>Full-stack software engineer</b> - specialized in reliability (SRE) and observability - leveling up systems and engineers with
+      sociotechnical solutions. Author of <a href="https://srezone.com/blog">SreZone.com</a>,
+      fueled with passion for building impactful, reliable, scalable, and observable systems.
+      Combining 9 years of software engineering discipline with best practices.
+    </p>
+    <p>
+      <b><i>Key Highlights:</i></b>
+    </p>
+    <div
+      class="highlights"
+      style="display: flex; justify-content: space-between"
+    >
+      <ul style="list-style-type: none; padding: 0">
+        <li>✔ Reduced APM onboarding time from 3 days to 30 minutes</li>
+        <li>✔ Shortened dev onboarding time by 2 days</li>
+        <li>✔ Saved 10 engineering hours each monthly release</li>
+      </ul>
+      <ul style="list-style-type: none; padding: 0">
+        <li>✔ Cut AWS S3 spendings by 84% and EBS spendings by 65%</li>
+        <li>
+          ✔ Eliminated 15 change tickets per month via self-service solution
+        </li>
+        <li>✔ Defining and leading reliability north star strategies</li>
+      </ul>
+    </div>
+    <p>
+      <b><i>Technical Toolkit:</i></b> Terraform , OpenTelemetry , Dynatrace ,
+      Linux , Git , AWS , Node.js , Python , Jenkins , GitHub Actions , Docker ,
+      K8s (Kubernetes) , NGINX , Ansible , event-driven systems , SQL , NoSQL , toil reduction, Technical Writing
+    </p>
+    <p class="section-header">EXPERIENCE</p>
+    <div class="three-column">
+      <p style="width: 33.33%">Software Engineer II (SRE, Platform)</p>
+      <p style="width: 33.33%">COMPANYNAME</p>
+      <p style="width: 33.33%">April 2023&mdash;Present</p>
+    </div>
+    <ul>
+      <li>
+        Reduced APM onboarding time from 3 days to 30 minutes via self-service
+        Terraform config generator UI and pipeline.<!-- add blog post link when ready-->
+      </li>
+      <li>
+        Defined north star strategy and OKRs for 3-year downtime reduction roadmap.
+      </li>
+      <li>
+        Evangelized SRE and OpenTelemetry across the company through developer
+        portal integration and documentation.
+      </li>
+      <ul>
+        <li>
+          Led working group to define best practices, enhance DevEx, deduplicate
+          efforts, and prevent technical debt.
+        </li>
+      </ul>
+      <li>
+        Created company-wide GenAI dashboard to guide AWS Bedrock usage optimization and reduce costs by 15% (cache).
+      </li>
+      <li>
+        Developing AI Resilience agent that helps engineers decompose, understand, strengthen, and chaos-engineer their systems.
+      </li>
+    </ul>
+    <div class="three-column">
+      <p>Software Engineer I (SRE, R&amp;D)</p>
+      <p></p>
+      <p>May 2021&mdash;April 2023</p>
+    </div>
+    <ul>
+      <li>
+        Prevented sensitive data in logs by adding secret masking to common
+        NodeJS logger.
+      </li>
+      <li>
+        Enabled rapid troubleshooting and analytics through structured logging
+        in common NodeJS logger.
+      </li>
+      <li>
+        Partnered with IaC org to create and improve the company's Terraform
+        modules for compliance and faster development.
+      </li>
+      <li>
+        Pushed back on prescribed Terraform Cloud/Enterprise practices by
+        proving VCS approach inadequate for app builds and instead promoting
+        CLI/API, preventing headaches for many teams.
+      </li>
+      <li>
+        Mentored junior engineers via task delegation, code reviews, and
+        encouraged critical thinking.
+      </li>
+    </ul>
+    <div class="three-column">
+      <p>Advanced Software Engineer (Java, CI/CD)</p>
+      <p>COMPANYNAME</p>
+      <p>December 2019&mdash;May 2021</p>
+    </div>
+    <ul>
+      <li>
+        Cut AWS S3 spendings by 84% and EBS spendings by 65% with lifecycle
+        policies.
+      </li>
+      <li>
+        Saved 10 engineering hours each monthly release by creating artifact
+        downloader and installer scripts.
+      </li>
+      <li>
+        Built I18N replacement for a discontinued vendor solution that generated
+        string translations for release artifacts.
+      </li>
+    </ul>
+    <div class="three-column">
+      <p>Software Engineer (Big Data)</p>
+      <p>COMPANYNAME</p>
+      <p>July 2017&mdash;November 2019</p>
+    </div>
+    <ul>
+      <li>
+        Eliminated 15 change tickets per month via self-service job runner that
+        dynamically pulled job arguments from API.
+      </li>
+      <li>
+        Shortened dev onboarding time by 2 days with scripts that installed
+        fresh developer environments, accessible over x11vnc.
+      </li>
+      <li>
+        Reduced decommissioning project timeline from 3 months to 1 month by
+        proposing rsync archival and leading implementation.
+      </li>
+      <li>
+        Built 'relationship discovery' tool to discover undocumented database
+        fields for customer data purge project.
+      </li>
+    </ul>
+    <div class="three-column">
+      <p>Software Engineer (Internship)</p>
+      <p></p>
+      <p>June 2016&mdash;May 2017</p>
+    </div>
+    <ul>
+      <li>
+        Identified 25pB of content type across private cloud storage with big
+        data technique.
+      </li>
+      <li>
+        Moved 5 billion 'server crawl' records from CSV files into Hadoop for
+        data governance dashboard via Python ETL script.
+      </li>
+    </ul>
+    <div class="three-column">
+      <p>Developer (Internship)</p>
+      <p></p>
+      <p>June 2015&mdash;August 2015</p>
+    </div>
+    <ul>
+      <li>
+        Created REST API in Java to CRUD MongoDB and shared practices with other
+        interns.
+      </li>
+      <li>
+        Designed and collaborated with peers on technical solution for interns
+        Summer project.
+      </li>
+    </ul>
+
+    <p class="section-header">PROJECTS</p>
+    <p>
+      <b>Work:</b> APM onboarding IaC pattern + UI, Observability Hub (internal documentation),
+      Service Level Objective (SLO) Terraform module (wrapper), Winston wrapper for OTel structured
+      logging, enterprise job runner abstraction, system resilience copilot/AI agent.
+    </p>
+    <p>
+      <b>Personal:</b> <a href="https://SreZone.com">SreZone.com</a> blog,
+      <a href="https://CabinSaver.com">CabinSaver.com</a> (cruise deal website with 5 DAU),
+      homepage link organizer, bookmark queue, scheduled push notifications,
+      this resume (HTML), coupon clipper,
+      scheduled Twitter poster, home surveillance system, IRC Snapchat.
+    </p>
+    <p class="section-header">EDUCATION AND CERTIFICATIONS</p>
+    <p>
+      <b>B.S. Computer Science</b>, Minor in Business Information Systems,
+      Eastern Connecticut State University, <b>GPA: 3.96</b> (2013&mdash;2017)
+    </p>
+    <p><b>AWS Solutions Architect Associate</b> (June 2020&mdash;June 2023)</p>
+  </body>
+</html>
